@@ -4,7 +4,14 @@ from discord.ext import commands
 
 from youtube_dl import YoutubeDL
 
+class TutorialButton(discord.ui.View):
+    def __init__(self):
+        super().__init__()
+        self.value = None
+        self.timeout=600
 
+        botaourl = discord.ui.Button(label="Crie seu próprio ParaFAL",url="https://www.youtube.com/watch?v=Ppv0Yf8UICY")
+        self.add_item(botaourl)
 
 class music(commands.Cog):
     def __init__(self, client):
