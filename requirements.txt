@@ -2,5 +2,5 @@ discord.py
 discord.py[voice]
 python-dotenv
 PyNaCl
-youtube_dl
+https://github.com/ytdl-org/youtube-dl/archive/refs/heads/master.zip
 ffmpeg
