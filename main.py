@@ -13,6 +13,14 @@ logging.basicConfig(level=logging.INFO)
 
 bot = commands.Bot(command_prefix="!!",intents=discord.Intents.all(),application_id=int(os.getenv("BOT_ID")))
 
+class SubButton(discord.ui.View):
+    def __init__(self):
+        super().__init__()
+        self.value = None
+        self.timeout=600
+
+        botaourl = discord.ui.Button(label="Bom Dia",url="https://www.youtube.com/watch?v=Tgv__OZm_-4")
+        self.add_item(botaourl)
 
 @bot.event
 async def on_ready(): 
